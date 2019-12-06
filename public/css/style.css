@@ -1,0 +1,178 @@
+* { box-sizing: border-box; }
+
+body { 
+  background-color: #025E73; 
+  color: white; 
+  font-size: 14px; 
+  font-family: proxima-nova, sans-serif;
+  margin: 0;
+}
+
+.buffer { min-height: 100vh }
+
+main { display: block;}
+
+section { margin-bottom: 100px; }
+
+section > div:not(.text-wrapper) {
+  display: inline-block;
+  text-align: center;
+  padding: 40px 0;
+  position: relative;
+}
+
+.text-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  margin:0 20px;
+  text-align: left;
+}
+
+section h3 {
+  display: inline-block;
+  font-size: 2.5rem;
+  margin-bottom: 0
+}
+section p { 
+  font-size: 1.25rem;
+  line-height: 26px;
+  margin-bottom: 40px;
+}
+
+.svg-graphic { width: 190px; }
+
+.title {
+  text-align: center; 
+  line-height: 70px;
+  font-size: 1.5rem;
+  margin: 40px 0;
+}
+
+.main-header {
+  font-family: proxima-nova, sans-serif;
+  margin: 0;
+}
+
+#main-header-italic {
+  font-family: proxima-nova, sans-serif;
+  font-style: italic;
+  margin: 0;
+}
+
+#spotify {
+  background-color: #0396A6;
+  text-align: center;
+}
+#tidal {
+  background-color: #9ACDD9;
+  text-align: center;
+}
+#soundcloud {
+  background-color: #0396A6;
+  text-align: center;
+}
+#iheart {
+  background-color: #9ACDD9;
+  text-align: center;
+}
+#apple {
+  background-color: #0396A6;
+  text-align: center;
+}
+
+
+/*pop up*/
+
+.beer-info { display: inline-block; vertical-align: top; padding: 30px; border: thin solid white; }
+
+p > span { display: block; padding-bottom: 12px; }
+
+.popover { 
+  display: none;
+  position: absolute;
+  top: 22px;
+  left: -30%;
+  text-align: left;
+  /* background-color: #F2889B; */
+  background-color: #FF7700;
+  line-height: 32px;
+  width: 310px;
+  height: 220px;
+  z-index: 1;
+  border-radius: 60px;
+  padding: 4px;
+}
+
+.Content {font-size: 20px; margin-top:45px}
+.Users {font-size: 20px;}
+.LaunchDate {font-size: 20px;}
+.Headquarter {font-size: 20px;}
+
+.show-popover { display: block; }
+
+.see-more { 
+  display: block; 
+  padding: 12px 18px; 
+  border-radius: 50px; 
+  color: white; 
+  background-color: #FF7700; 
+  margin-top: 20px
+}
+
+
+
+/*media query*/
+@media screen and (min-width: 48em) {
+  .text-wrapper {margin: 0 35px;}
+}
+
+@media screen and (min-width:64em) {
+  section > div:not(.text-wrapper) {
+     width: 30%;
+     margin: auto 30px;
+  }
+
+  .svg-graphic {width: 210px;}
+
+  .popover { 
+    top: 30px;
+    left: -9%;
+    line-height: 35px;
+    width: 330px;
+    border-radius: 60px;
+    padding-left: 15px;
+  }
+
+  .Content {margin-top: 38px;}
+
+  #spotify {
+    display: flex;
+  }
+  #tidal {
+    display: flex;
+  }
+  #soundcloud {
+    display: flex;
+  }
+  #iheart {
+    display: flex;
+  }
+  #apple {
+    display: flex;
+  }
+
+  .text-wrapper {
+    width: 70%;
+  }
+
+  section h3 {font-size: 2.75rem;}
+  section p {font-size: 1.5rem; line-height: 30px;}
+}
+
+
+@media screen and (min-width: 74em) {
+  .popover {left:-1%}
+
+  section h3 {font-size: 3rem;}
+  section p {margin-top: 45px; line-height: 35px;}
+}
